@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
     font-weight: bold;
     font-family: Starjedi, sans-serif;
-    color: yellow;
+    color: #cca300;
 
 }
 
@@ -87,20 +87,20 @@ header {
     width: 100%;
     text-align: center;
     padding-top: 5%;
+    letter-spacing: 4px;
 }
 
 
 
    /*Footer*/
-
 footer {
     position: fixed;
     width: 100%;
     padding: 5px 0;
-    border-top: 8px solid red;
+    border-top: 8px solid gold;
     clear: both;
     text-align: center;
-    background-color: #646464;
+    background-color: black;
     height: 3em;
     width: 100%;
     z-index: 3;
@@ -108,7 +108,7 @@ footer {
 }
 
 #copyright {
-    color: #eee;
+    color: gold;
     text-align: center;
     width: 100%;
     font-size: 12px;
