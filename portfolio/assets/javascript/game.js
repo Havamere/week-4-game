@@ -6,12 +6,44 @@ var characters = [
 ];
 
 for (var i=0; i<characters.length; i++){
-	$("#"+i).attr({
-		Name: characters[i].Name,
-		HealthPoints: characters[i].HealthPoints,
-		AttackPower: characters[i].AttackPower,
-		CounterAttackPower: characters[i].CounterAttackPower,
-		src: characters[i].source,
-		background: characters[i].background,
-	})
-}
+	$('.character').append('<div class ="char" id="char'+[i]+'"></div>');	
+	$('#char'+[i]).append('<img src='+characters[i].source+'>');
+	$('#char'+[i]).prepend('<p>'+characters[i].Name+'</p>');
+	$('#char'+[i]).append('<p>'+characters[i].HealthPoints+'</p>');
+};
+
+$("#char0").on('click', function () {
+	$('#char0').appendTo('#you');
+	$('#char0').attr('id','player');
+	$('#char1, #char2, #char3').appendTo('#enemies');
+	$('#char1').attr('id','#enemy1');
+	$('#char2').attr('id','#enemy2');
+	$('#char3').attr('id','#enemy3');
+});
+
+$("#char1").on('click', function () {
+	$('#char1').appendTo('#you');
+	$('#char1').attr('id','player');
+	$('#char0, #char2, #char3').appendTo('#enemies');
+	$('#char0').attr('id','#enemy1');
+	$('#char2').attr('id','#enemy2');
+	$('#char3').attr('id','#enemy3');
+});
+
+$("#char2").on('click', function () {
+	$('#char2').appendTo('#you');
+	$('#char2').attr('id','player');
+	$('#char0, #char1, #char3').appendTo('#enemies');
+	$('#char0').attr('id','#enemy1');
+	$('#char1').attr('id','#enemy2');
+	$('#char3').attr('id','#enemy3');
+});
+
+$("#char3").on('click', function () {
+	$('#char3').appendTo('#you');
+	$('#char3').attr('id','player');
+	$('#char0, #char1, #char2').appendTo('#enemies');
+	$('#char0').attr('id','#enemy1');
+	$('#char1').attr('id','#enemy2');
+	$('#char2').attr('id','#enemy3');
+});

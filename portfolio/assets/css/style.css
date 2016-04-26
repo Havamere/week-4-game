@@ -42,7 +42,6 @@ h2 {
 h3 {
     font-size: 1.33em;
     margin-top: 1em;
-    margin-bottom: 1em;
     letter-spacing: 0.75px;
 }
 
@@ -62,6 +61,10 @@ h6 {
     font-size: .67em;
     margin-top: 2.33em;
     margin-bottom: 2.33em;
+}
+
+p {
+    color: gold;
 }
 
     /*Spacing Divs*/
@@ -94,10 +97,40 @@ section {
     float: left;
 }
 
+#you {
+    clear: both;
+}
+
+#enemies {
+    width: 750px;
+    clear: both;
+}
+
+#fight {
+    clear: both;
+}
+
+#defender {
+    clear: both;
+}
+
 .character {
+    width:960px;
+}
+
+.char {
+    height: 220px;
+    width: 180px;
+    float: left;
+    text-align: center;
+    border: 2px white solid;
+}
+
+.char img {
     height: 150px;
     width: 150px;
     float: left;
+    margin-left: 13px;
 }
 
    /*Footer*/
