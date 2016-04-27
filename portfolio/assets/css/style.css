@@ -97,6 +97,10 @@ section {
     float: left;
 }
 
+#main-section {
+    height:900px;
+}
+
 #you {
     clear: both;
 }
@@ -131,6 +135,10 @@ section {
     width: 100px;
     float: left;
     margin-left: 13px;
+}
+
+#combat-log {
+    clear: both;
 }
 
    /*Footer*/
